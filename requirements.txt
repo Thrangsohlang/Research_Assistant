@@ -4,4 +4,4 @@ chromadb
 sentence-transformers
 torch
 fastapi
-watchdog
+uvicorn

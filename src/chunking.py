@@ -16,7 +16,8 @@ client = chromadb.PersistentClient(
 
 def get_chroma_collection():
     # Create collection name
-    collection = client.get_or_create_collection("journals")
+    collection = client.get_or_create_collection("journals",
+                                                 metadata={"hnsw:space": "cosine"})
     return collection
 
 
@@ -44,7 +45,7 @@ def create_metadata(texts: Dict):
     # return dict of metadata
     return
 
-def embedding_texts(text:str):
+def embed_texts(text:str):
     """function to embed the texts"""
     # embed the text
     emb = embed_model.encode(text).tolist()  # embeddings in a list
@@ -69,7 +70,7 @@ def prepare_upsert_payload(
         _id = chunk["id"]
         meta = {k: v for k, v in chunk.items() if k != "text" or "attributes"}
         meta["attributes"] = ", ".join(chunk["attributes"])  # join the attributes by comma
-        emb = embedding_texts(text)
+        emb = embed_texts(text)
         
         ids.append(_id)
         embs.append(emb)
