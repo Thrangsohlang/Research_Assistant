@@ -14,8 +14,10 @@ client = chromadb.PersistentClient(
     path="./chroma_db"
 )
 
-# Create collection name
-collection = client.get_or_create_collection("journals")
+def get_chroma_collection():
+    # Create collection name
+    collection = client.get_or_create_collection("journals")
+    return collection
 
 
 def read_document(filepath:str):
@@ -133,6 +135,8 @@ def upsert(collection, ids: List[str], embs: List[List[float]], metadatas: List[
 if __name__ == "__main__":
     with open(r"Files\Sample_chunks.json", "r", encoding="utf-8") as f:
         docs = json.load(f)
+    
+    collection = get_chroma_collection()
     
     ids, embs, metadatas, documents = prepare_upsert_payload(docs)
     

@@ -3,3 +3,5 @@ watchdog
 chromadb
 sentence-transformers
 torch
+fastapi
+watchdog
