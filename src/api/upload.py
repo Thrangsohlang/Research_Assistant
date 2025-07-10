@@ -1,7 +1,9 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends, Security
 from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, Field
 from typing import List, Dict
+from src.api.auth import get_current_user
+from src.api.auth import User as AuthUser
 
 from src.chunking import prepare_upsert_payload, upsert, get_chroma_collection
 
@@ -30,9 +32,10 @@ class UploadRequest(BaseModel):
 # upload endpoint
 @router.put("/api/upload",
             status_code=status.HTTP_202_ACCEPTED,
+            # dependencies=[Security(get_current_user, scopes=["ingest"])],
             summary="Ingest pre-chunked docs",
             description="Accepts a batch of journal chunks, embeds them, and stores them in ChromaDB")
-async def upload_chunks(payload: UploadRequest):
+async def upload_chunks(payload: UploadRequest, current_user: AuthUser = Security(get_current_user, scopes=["ingest"])):
     try:
         chunks_dict = jsonable_encoder(payload.chunks) 
         ids, embeddings, metadatas, documents = prepare_upsert_payload(chunks_dict) 

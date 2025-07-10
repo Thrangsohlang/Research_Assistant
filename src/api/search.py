@@ -1,17 +1,20 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends, Security
 from src.utils.schemas import SearchRequest, SearchResponse, SearchResult
 from src.chunking import embed_texts, get_chroma_collection
 from src.similarity_search import semantic_search
+from src.api.auth import get_current_user
+from src.api.auth import User as AuthUser
 
 # router
 router = APIRouter()
 
 @router.post(
     "/api/similarity_search",
+    # dependencies=[Security(get_current_user, scopes=["search"])],
     response_model=SearchResponse,
     summary="Run a semantic similarity search over the chunks"
 )
-async def similarity_search(payload: SearchRequest):
+async def similarity_search(payload: SearchRequest, current_user: AuthUser = Security(get_current_user, scopes=["search"])):
     try:
         query_emb = embed_texts(payload.query)
     except Exception as e:
@@ -31,4 +34,5 @@ async def similarity_search(payload: SearchRequest):
     
     # results
     results = [SearchResult(**h) for h in hits]
+    print(current_user)
     return SearchResponse(results=results)

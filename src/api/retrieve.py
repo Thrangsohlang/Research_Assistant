@@ -1,6 +1,8 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends, Security
 from src.chunking import get_chroma_collection
 from src.journal_retriever import retrieve_journal
+from src.api.auth import get_current_user
+from src.api.auth import User as AuthUser
 
 # router
 router = APIRouter()
@@ -8,9 +10,10 @@ router = APIRouter()
 
 @router.get(
     "/api/{journal_id}",
+    # dependencies=[Security(get_current_user, scopes=["retrieve"])], 
     summary="Fetch all chunks for a given journal document"
 )
-async def get_journal(journal_id: str):
+async def get_journal(journal_id: str, current_user: AuthUser = Security(get_current_user, scopes=["retrieve"])):
     collection = get_chroma_collection()
     try:
         data = retrieve_journal(collection, journal_id)

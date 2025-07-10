@@ -5,3 +5,6 @@ sentence-transformers
 torch
 fastapi
 uvicorn
+pyjwt
+pydantic
+pydantic-settings
