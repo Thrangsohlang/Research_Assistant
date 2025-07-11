@@ -8,3 +8,4 @@ uvicorn
 pyjwt
 pydantic
 pydantic-settings
+python-multipart

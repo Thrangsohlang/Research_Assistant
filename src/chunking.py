@@ -4,12 +4,15 @@ import chromadb
 from chromadb.config import Settings
 from typing import List, Dict, Tuple
 from sentence_transformers import SentenceTransformer
+from src.utils.logger_RA import logger
 
 
 # get the embedding models
+logger.log_info("[vector_db] Initializing embedding model")
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # initialize chromadb
+logger.log_info("[vector_db] Initializing ChromaDB client at ./chroma_db")
 client = chromadb.PersistentClient(
     path="./chroma_db"
 )
@@ -47,9 +50,10 @@ def create_metadata(texts: Dict):
 
 def embed_texts(text:str):
     """function to embed the texts"""
+    logger.log_info(f"[vector_db] Embedding text of length {len(text)}")
     # embed the text
     emb = embed_model.encode(text).tolist()  # embeddings in a list
-    
+    logger.log_info("[vector_db] Text embedding generated")
     return emb
 
 
@@ -68,15 +72,17 @@ def prepare_upsert_payload(
     for chunk in chunks:
         text = chunk["text"]
         _id = chunk["id"]
-        meta = {k: v for k, v in chunk.items() if k != "text" or "attributes"}
+        meta = {k: v for k, v in chunk.items() if k != "text" and k != "attributes"}
         meta["attributes"] = ", ".join(chunk["attributes"])  # join the attributes by comma
-        emb = embed_texts(text)
+        logger.log_info(f"[vector_db] Prepared metadata for chunk id='{_id}': {meta.keys()}")
         
+        emb = embed_texts(text)
         ids.append(_id)
         embs.append(emb)
         metadatas.append(meta)
         documents.append(text)
     
+    logger.log_info(f"[vector_db] Upsert payload ready: {len(ids)} ids, {len(embs)} embeddings")
     return ids, embs, metadatas, documents
 
 
@@ -112,6 +118,7 @@ def upsert(collection, ids: List[str], embs: List[List[float]], metadatas: List[
         Propagates any exception encountered during the upsert or persist operations.
     """
     try:
+        logger.log_info(f"[vector_db] Upserting {len(ids)} documents into collection '{collection.name}'")
         # Upsert embeddings, metadata, and raw text into the collection
         collection.upsert(
             ids=ids,
@@ -119,11 +126,11 @@ def upsert(collection, ids: List[str], embs: List[List[float]], metadatas: List[
             metadatas=metadatas,
             documents=documents
         )
-    
+        logger.log_info("[vector_db] Upsert successful, persisting to disk")
         return "Successfully upserted documents to ChromaDB!"
     except Exception as e:
         # Log error and re-raise for upstream handling
-        print(f"Error while upserting: {e}")
+        logger.log_error(f"[vector_db] Error while upserting: {e}")
         raise
         
     

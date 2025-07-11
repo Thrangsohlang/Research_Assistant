@@ -45,6 +45,6 @@ if __name__=="__main__":
     journal_id = "extension_brief_mucuna.pdf"
     collection = get_chroma_collection()
     retrieved_data = retrieve_journal(collection=collection, journal_id=journal_id)
-    print(retrieved_data)
+    # print(retrieved_data)
     
     

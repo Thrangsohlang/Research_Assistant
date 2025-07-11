@@ -1,0 +1,139 @@
+2025-07-11 08:39:57 - Research_Assistant - INFO - [vector_db] Initializing embedding model
+2025-07-11 08:40:07 - Research_Assistant - INFO - [vector_db] Initializing ChromaDB client at ./chroma_db
+2025-07-11 08:41:21 - Research_Assistant - INFO - [vector_db] Initializing embedding model
+2025-07-11 08:41:29 - Research_Assistant - INFO - [vector_db] Initializing ChromaDB client at ./chroma_db
+2025-07-11 08:41:31 - Research_Assistant - INFO - [auth] Creating token for subject='admin' scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:41:31 - Research_Assistant - INFO - [auth] Token created for subject='admin', expires=2025-07-12T03:11:31.715351+00:00
+2025-07-11 08:41:50 - Research_Assistant - INFO - [vector_db] Initializing embedding model
+2025-07-11 08:42:00 - Research_Assistant - INFO - [vector_db] Initializing ChromaDB client at ./chroma_db
+2025-07-11 08:43:40 - Research_Assistant - INFO - [vector_db] Initializing embedding model
+2025-07-11 08:43:54 - Research_Assistant - INFO - [vector_db] Initializing ChromaDB client at ./chroma_db
+2025-07-11 08:44:14 - Research_Assistant - INFO - [auth] get_current_user called, required_scopes=['ingest']
+2025-07-11 08:44:14 - Research_Assistant - INFO - [auth] Decoding token for user lookup
+2025-07-11 08:44:14 - Research_Assistant - INFO - [auth] Token valid for subject='admin', scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:44:14 - Research_Assistant - INFO - [auth] Authenticated user='admin' with scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:44:14 - Research_Assistant - INFO - Current_User: id='admin' username='admin' scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_01_intro': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Embedding text of length 682
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_02_why_grow_1': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Embedding text of length 677
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_03_why_grow_2': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:14 - Research_Assistant - INFO - [vector_db] Embedding text of length 467
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_04_site_selection': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 574
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_05_land_prep': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 603
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_06_plant_single': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 335
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_07_plant_intercrop': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 693
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_08_weeds_pests': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 486
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_09_harvest': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 579
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='mucuna_10_conserve_seed': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 457
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='transformer_01_abstract': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 1139
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='transformer_02_intro_1': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 416
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='transformer_03_intro_2': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 755
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='transformer_04_intro_3': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 730
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Prepared metadata for chunk id='transformer_05_background': dict_keys(['id', 'source_doc_id', 'chunk_index', 'section_heading', 'journal', 'publish_year', 'usage_count', 'link', 'attributes'])
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Embedding text of length 825
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Upsert payload ready: 15 ids, 15 embeddings
+2025-07-11 08:44:15 - Research_Assistant - INFO - [upload_chunks] Prepared upsert payload: 15 ids, 15 embeddings
+2025-07-11 08:44:15 - Research_Assistant - INFO - [vector_db] Upserting 15 documents into collection 'journals'
+2025-07-11 08:44:16 - Research_Assistant - INFO - [vector_db] Upsert successful, persisting to disk
+2025-07-11 08:44:16 - Research_Assistant - INFO - [upload_chunks] Upsert successful: 15 chunks into collection 'journals'
+2025-07-11 08:44:16 - Research_Assistant - INFO - [upload_chunks] Request completed successfully
+2025-07-11 08:44:43 - Research_Assistant - INFO - [auth] get_current_user called, required_scopes=['retrieve']
+2025-07-11 08:44:43 - Research_Assistant - INFO - [auth] Decoding token for user lookup
+2025-07-11 08:44:43 - Research_Assistant - INFO - [auth] Token valid for subject='admin', scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:44:43 - Research_Assistant - INFO - [auth] Authenticated user='admin' with scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:44:43 - Research_Assistant - INFO - [get_journal] User=admin requesting journal_id='1706.03762v7.pdf'
+2025-07-11 08:44:44 - Research_Assistant - INFO - [get_journal] Retrieved 0 chunks for journal_id='1706.03762v7.pdf' from collection 'journals'
+2025-07-11 08:44:44 - Research_Assistant - INFO - [get_journal] Completed request for journal_id='1706.03762v7.pdf' successfully
+2025-07-11 08:45:21 - Research_Assistant - INFO - [auth] get_current_user called, required_scopes=['search']
+2025-07-11 08:45:21 - Research_Assistant - INFO - [auth] Decoding token for user lookup
+2025-07-11 08:45:21 - Research_Assistant - INFO - [auth] Token valid for subject='admin', scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:45:21 - Research_Assistant - INFO - [auth] Authenticated user='admin' with scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:45:21 - Research_Assistant - INFO - [similarity_search] User=admin querying: 'what is a transformer', k=10, min_score=0.7
+2025-07-11 08:45:21 - Research_Assistant - INFO - [vector_db] Embedding text of length 21
+2025-07-11 08:45:22 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Starting search: k=10, min_score=0.7
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Retrieved 10 raw results
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_05_background' with score=0.7043560743331909
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_04_intro_3' with score=0.7354023456573486
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_01_abstract' with score=0.7602431178092957
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_03_why_grow_2' with score=0.8849552273750305
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_02_why_grow_1' with score=0.9376688003540039
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_02_intro_1' with score=0.9428299069404602
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_01_intro' with score=0.9646733999252319
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_08_weeds_pests' with score=0.985731303691864
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_10_conserve_seed' with score=0.9902529120445251
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_03_intro_2' with score=0.9919578433036804
+2025-07-11 08:45:22 - Research_Assistant - INFO - [semantic_search] Completed search with 0 hits
+2025-07-11 08:45:22 - Research_Assistant - INFO - [similarity_search] Retrieved 0 hits from collection 'journals'
+2025-07-11 08:45:22 - Research_Assistant - INFO - [similarity_search] Response prepared successfully
+2025-07-11 08:45:51 - Research_Assistant - INFO - [auth] get_current_user called, required_scopes=['search']
+2025-07-11 08:45:51 - Research_Assistant - INFO - [auth] Decoding token for user lookup
+2025-07-11 08:45:51 - Research_Assistant - INFO - [auth] Token valid for subject='admin', scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:45:51 - Research_Assistant - INFO - [auth] Authenticated user='admin' with scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 08:45:51 - Research_Assistant - INFO - [similarity_search] User=admin querying: 'what is a transformer', k=10, min_score=0.9
+2025-07-11 08:45:51 - Research_Assistant - INFO - [vector_db] Embedding text of length 21
+2025-07-11 08:45:52 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Starting search: k=10, min_score=0.9
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Retrieved 10 raw results
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_05_background (score=0.7043560743331909)
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_04_intro_3 (score=0.7354023456573486)
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_01_abstract (score=0.7602431178092957)
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Accepting hit: mucuna_03_why_grow_2 (score=0.8849552273750305)
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_02_why_grow_1' with score=0.9376688003540039
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_02_intro_1' with score=0.9428299069404602
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_01_intro' with score=0.9646733999252319
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_08_weeds_pests' with score=0.985731303691864
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_10_conserve_seed' with score=0.9902529120445251
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Skipping id='transformer_03_intro_2' with score=0.9919578433036804
+2025-07-11 08:45:52 - Research_Assistant - INFO - [semantic_search] Completed search with 4 hits
+2025-07-11 08:45:52 - Research_Assistant - INFO - [similarity_search] Retrieved 4 hits from collection 'journals'
+2025-07-11 08:45:52 - Research_Assistant - INFO - [similarity_search] Response prepared successfully
+2025-07-11 09:58:22 - Research_Assistant - INFO - [auth] get_current_user called, required_scopes=['search']
+2025-07-11 09:58:22 - Research_Assistant - INFO - [auth] Decoding token for user lookup
+2025-07-11 09:58:22 - Research_Assistant - INFO - [auth] Token valid for subject='admin', scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 09:58:22 - Research_Assistant - INFO - [auth] Authenticated user='admin' with scopes=['ingest', 'search', 'retrieve', 'admin']
+2025-07-11 09:58:22 - Research_Assistant - INFO - [similarity_search] User=admin querying: 'transformer model', k=10, min_score=0.9
+2025-07-11 09:58:22 - Research_Assistant - INFO - [vector_db] Embedding text of length 17
+2025-07-11 09:58:22 - Research_Assistant - INFO - [vector_db] Text embedding generated
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Starting search: k=10, min_score=0.9
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Retrieved 10 raw results
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_04_intro_3 (score=0.6997088193893433)
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_05_background (score=0.7397357225418091)
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_01_abstract (score=0.7672073245048523)
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_02_intro_1 (score=0.8339889049530029)
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Accepting hit: transformer_03_intro_2 (score=0.8925392627716064)
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_10_conserve_seed' with score=0.9322296977043152
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_09_harvest' with score=0.9685678482055664
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_03_why_grow_2' with score=0.9767155647277832
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_02_why_grow_1' with score=0.984961748123169
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Skipping id='mucuna_04_site_selection' with score=0.9885789155960083
+2025-07-11 09:58:23 - Research_Assistant - INFO - [semantic_search] Completed search with 5 hits
+2025-07-11 09:58:23 - Research_Assistant - INFO - [similarity_search] Retrieved 5 hits from collection 'journals'
+2025-07-11 09:58:23 - Research_Assistant - INFO - [similarity_search] Response prepared successfully
